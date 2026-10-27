@@ -1,0 +1,20 @@
+MARITZA CONTROL DE LLAMADAS — PWA V8 (ARCHIVOS EN UNA SOLA CARPETA)
+
+ESTOS SEIS ARCHIVOS DEBEN QUEDAR JUNTOS:
+index.html
+manifest.webmanifest
+service-worker.js
+icon-192.png
+icon-512.png
+LEEME_INSTALACION.txt
+
+INSTALACION ANDROID:
+1. Descarga el ZIP y extrae todos los archivos a una misma carpeta, sin subcarpetas.
+2. Para instalar como PWA debes subir los cinco archivos de aplicación (sin el LEEME si prefieres) a la MISMA ubicación de un sitio HTTPS, por ejemplo usando Netlify Drop. Sube los archivos juntos, sin carpetas internas.
+3. En Chrome abre la dirección HTTPS del sitio y usa menú ⋮ > Instalar aplicación.
+4. Si actualizas una instalación anterior, usa la misma dirección y ruta HTTPS. Guarda ANTES un respaldo JSON en la aplicación anterior para proteger llamadas y consultoras nuevas.
+5. Después de actualizar, comprueba el directorio, mantenimiento, agenda y registros. Si cambió el origen web, restaura el respaldo JSON.
+
+ADVERTENCIA DE PRIVACIDAD:
+Los datos iniciales de nombres y teléfonos están incluidos en index.html, y por tanto son accesibles a quien tenga la URL pública. Evita publicar datos reales en sitios sin control de acceso. El almacenamiento posterior es local del navegador, no sincronizado entre dispositivos. Para compartir entre usuarios de forma segura se necesita una solución con autenticación y base de datos.
+El dictado de voz depende del navegador y sus permisos. Los avisos no se envían mientras la aplicación esté cerrada.
